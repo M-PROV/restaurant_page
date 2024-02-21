@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("../images/pizza.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.restaurant-name {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 120px;
+    color: #E8E6DB;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav > button {
+    padding: 10px 20px;
+    border-color: #E8E6DB;
+    border-bottom: none;
+    margin-left: 10px;
+    font-family: "Protest Strike", sans-serif;
+    color: #E8E6DB;
+    background: #9E5F2E;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav > button:hover {
+    background: #834d24;
+}
+
+#content {
+    background-color: #9E9790;
+    min-height: 85vh;
+}
+
+.card-container {
+    width: 70%;
+    height: 85vh;
+    background-color: #E8E6DB;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px 5px #28282833;
+}
