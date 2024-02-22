@@ -7,6 +7,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: '[name][ext]',
   },
   module: {
     rules: [
@@ -14,24 +15,17 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images',
-            },
-          },
-        ],
-      },
+     {
+       test: /\.(png|svg|jpg|jpeg|gif)$/i,
+       type: 'asset/resource',
+     },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html', // Path to HTML template
       filename: 'index.html', // Output file name
+      favicon: "./src/favicon/favicon.ico",
     }),
   ],
 };
