@@ -5,7 +5,7 @@ export function menuPage() {
     
     const logo = document.createElement('img');
     logo.classList.add('logo');
-    logo.setAttribute('src', '../images/PNB_Logo.png');
+    logo.setAttribute('src', './images/PNB_Logo.png');
 
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-container');

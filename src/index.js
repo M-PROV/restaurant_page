@@ -1,6 +1,7 @@
 import { homePage } from "./home.js";
 import { aboutPage } from "./about.js";
 import { menuPage } from "./menu.js";
+import './style.css';
 
 //Function to show home page 
 function showHomePage() {

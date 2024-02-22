@@ -1,6 +1,4 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 
 html,
 body {
@@ -9,10 +7,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Protest Strike", sans-serif;
+    box-sizing: border-box;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("../images/pizza.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("./images/pizza-min-min.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +52,7 @@ nav > button:hover {
 }
 
 #content {
-    background: url("../images/pizza_bkgrnd.jpg");
+    background-image: url("./images/pizza_bkgrnd-min.jpg");
     min-height: 85vh;
 }
 

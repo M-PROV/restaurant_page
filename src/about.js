@@ -5,7 +5,7 @@ export function aboutPage() {
 
     const logo = document.createElement('img');
     logo.classList.add('logo');
-    logo.setAttribute('src', '../images/PNB_Logo.png');
+    logo.setAttribute('src', './images/PNB_Logo.png');
 
     const aboutTitle = document.createElement('div');
     aboutTitle.classList.add('about-title');
